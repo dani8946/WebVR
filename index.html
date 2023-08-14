@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A-Frame Three Walls</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-camera position = "0 2 8"></a-camera>
+    <a-assets>
+      <img id="1" src="Description.png">
+      <img id="2" src="skeleton.jpg">
+      <img id="3" src="23232.jpg">
+      <img id="5" src="Jagriti.jpg">
+      <img id="6" src="Dani.jpg">
+      <img id="7" src="logometa.png">
+      <img id="8" src="Jeevika.jpg">
+      <img id="9" src="Khushi.jpg">
+      <img id="10" src="Nishtha.jpg">
+      <img id="11" src="Da.png">
+      <img id="12" src="Ja.png">
+      <img id="13" src="Kh.png">
+      <img id="14" src="Je.png">
+      <img id="15" src="Ni.png">
+      <video id="4"  autoplay loop="true" src="DiaphragmDemo.mp4"></video>
+      <video id="16"  autoplay loop="true" src="Pitching Video.mp4"></video>
+
+
+    </a-assets>
+    <a-sky src="#3"></a-sky>
+    <!--Ground-->
+    <a-plane color="green" rotation="-90 0 0" width="100" height="100"></a-plane>
+    <!--Front Wall-->
+    <a-box position="0 0 -5" width="14" height="10" depth="0.1" color="grey"></a-box>
+    <a-image src="#5" position="-2.5 3 -4.9" scale="1.5 1.5 1" ></a-image>
+    <a-image src="#6" position="-0.28 4.2 -4.9" scale="1.5 1.5 1"></a-image>
+    <a-image src="#8" position="-4.3 1.5 -4.9" scale="1.5 1.5 1"></a-image>
+    <a-image src="#7" position="-5.5 4.5 -4.9" scale="1 0.7 1"></a-image>
+    <a-image src="#9" position="2 3 -4.9" scale="1.5 1.5 1"></a-image>
+    <a-image src="#10" position="3.9 1.5 -4.9" scale="1.5 1.5 1"></a-image>
+
+    <!--Names and designation-->
+    <a-image src="#11" position="-0.25 3.2 -4.9" scale="1.5 0.5 1"></a-image>
+    <a-image src="#12" position="-2.5 2 -4.9" scale="1 0.4 0.9"></a-image>
+    <a-image src="#13" position="2 2 -4.9" scale="1 0.5 1"></a-image>
+    <a-image src="#14" position="-4.3 0.4 -4.9" scale="1 0.5 1"></a-image>
+    <a-image src="#15" position="3.9 0.4 -4.9" scale="1 0.5 1"></a-image>
+    
+    
+    
+    
+    <!--Left Wall-->
+    <a-box position="-7 -2 -1" width="0.1" height="14" depth="9" color="black"></a-box>
+    <a-image src="#1" position ="-6.9 2.7 2" width="3" height="4" rotation="0 90 0">
+    </a-image>
+    <a-video src="#16" position="-6.9 2.7 -2.5" scale="5.5 4 0" rotation="0 90 0"></a-video>
+    <a-text value="PITCHING VIDEO" align="center" color="#FFF" style="font-size:1" position="-6.9 4.8 -2.5" rotation="0 90 0"></a-text>
+    
+
+
+
+    <!--Right Wall-->
+    <a-box position="7 -2 -1" width="0.1" height="14" depth="9" color="black"></a-box>
+    <a-text value="DEMO VIDEO & PICTURE" align="center" color="#FFF" style="font-size:1" position="6.9 4.5 -0.3" rotation="0 270 0"></a-text>
+    <a-video src="#4"position="6.9 2 -1.8"scale="8 4 0" rotation="0 270 0"></a-video>
+    <a-image src="#2" position ="6.85 2 1.4" rotation="0 270 0" width="2" height="3.9" ></a-image>
+    
+    
+
+    
+
+  </a-scene>
+</body>
+</html>
